@@ -1,0 +1,17 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+#navbar {
+  width: 80%;
+  height: 100px;
+  background-color: rgb(228, 217, 217);
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+a {
+}
