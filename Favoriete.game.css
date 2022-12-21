@@ -6,9 +6,9 @@
 }
 h1 {
     display: block;
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
-    color: #006241;
+    color: darkred;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 35px;
@@ -45,11 +45,9 @@ body {
     box-shadow:  0 15px 30px rgb(0.0.0.5);;
 }
 .imgbox {
-    width: 960px;
     margin: 0;
     padding-bottom: 20px;
-    padding-top: 820px;
-
+    padding-top: 20px;
 }
 .imgbox img {
     max-width: 100%;
