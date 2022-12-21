@@ -47,7 +47,7 @@ body {
 .imgbox {
   margin: 0;
   padding-bottom: 20px;
-  padding-top: 150px;
+  padding-top: 20px;
 }
 .imgbox img {
   max-width: 100%;
@@ -74,4 +74,41 @@ body {
   line-height: 30px;
   letter-spacing: 1px;
   color: black;
+}
+#h1Robert {
+  display: block;
+  text-align: center;
+  letter-spacing: 1px;
+  color: rgb(63, 62, 62);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+.boxRobert {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 895px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgb(73, 72, 72);
+  border-radius: 4px;
+  box-shadow: 0 5px 15px black;
+  transition: 0.5s;
+}
+.imgboxRobert {
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 150px;
+}
+#imgRobert {
+  width: 100%;
+}
+#bodyRobert {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  font-family: sans-serif;
+  background: rgb(83, 83, 83);
 }

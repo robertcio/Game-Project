@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      #game {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="game" width="600px" height="600px"></canvas>
+    <script>
+      let canvas = document.getElementById("game");
+      let context = canvas.getContext("2d");
+      let character_image = new Image();
+      character_image.src = "characterImage.png";
+      character_image.onload = draw;
+
+      let player_position_x = 0;
+
+      // document.addEventListener("DOMContentLoaded", function (){
+      // })
+      function draw() {
+        context.clearRect(0, 0, 600, 600);
+        context.drawImage(character_image, 100, 100, 300, 150);
+        player_position_x += 5;
+        context.requestAnimationFrame(draw);
+      }
+
+      // document.addEventListener("DOMContentLoaded", function () {
+      //     context.drawImage(character_image, 100, 100, 50, 50)
+      //
+      // });
+    </script>
+  </body>
+</html>
