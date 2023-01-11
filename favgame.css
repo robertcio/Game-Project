@@ -1,17 +1,72 @@
-.container {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: block;
+@font-face {
+  font-family: milk_font;
+  src: url(fonts/Milk\ Kids.ttf)
+}
+@font-face {
+ font-family: nexa_font;
+ src: url(fonts/NexaText-Trial-ExtraLight.ttf);
+}
+* {
+  color: white;
+  font-size: 1.2em;
+  font-family: "milk_font";
+  background-color: rgb(24, 24, 24);
+}
+li, a {
+  font-weight: 1000;
+  text-decoration: none; 
+  list-style: none;
+}
+header {
+  display: flex;
+  justify-content: space-between; 
+  padding: 30px;
+  font-family: "milk_font";
+}
+button {
+  background-color: green;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer
+}
+button:hover {
+  background-color: lightgreen;
+}
+a:hover {
+  color: gray;
+}
+.aboutthedevs_nav li {
+  display: inline-block; 
+  padding: 10px;
+}
+.gameinfo {
+  margin: 0px 690px;
+  font-size: 32px;
+}
+.gamename a {
+  color: green;
+  font-size: 1.6em;
+  text-align: center;
+}
+.gamename a:hover { 
+  color: lightgreen;
+}
+.about_us {
+  display: flex; 
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.about_us a {
+  margin: 0px 40px;
 }
 h1 {
   display: block;
   text-align: center;
   letter-spacing: 1px;
-  color: darkred;
-  font-family: sans-serif;
+  color: green;
+  font-family: "milk_font";
   font-weight: bold;
-  font-size: 35px;
+  font-size: 70px;
 }
 p {
   display: block;
@@ -21,94 +76,45 @@ p {
   letter-spacing: 1px;
   color: black;
 }
-body {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  font-family: sans-serif;
-  background: darkred;
-}
-.box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 895px;
-  padding: 20px;
-  box-sizing: border-box;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 5px 15px black;
-  transition: 0.5s;
-}
-.box:hover {
-  box-shadow: 0 15px 30px rgb(0.5);
-}
-.imgbox {
-  margin: 0;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-.imgbox img {
-  max-width: 100%;
-}
-.box .container {
-  padding-left: 0;
-}
-.box .container h1 {
-  margin: 0;
-  padding-left: 0;
-  padding-bottom: 20px;
-  color: #006241;
-  font-size: 35px;
-  letter-spacing: 1px;
-  font-family: sans-serif;
-  font-weight: bold;
-}
-.box .container p {
-  margin: 0;
-  padding: 10px 0 0;
-  text-align: left;
-  font-size: 17px;
-  font-family: sans-serif;
-  line-height: 30px;
-  letter-spacing: 1px;
-  color: black;
-}
-#h1Robert {
+h2 {
   display: block;
   text-align: center;
-  letter-spacing: 1px;
-  color: rgb(63, 62, 62);
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 35px;
+  font-size: 45px;
+  font-family: "nexa_font";
 }
-.boxRobert {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 895px;
-  padding: 20px;
-  box-sizing: border-box;
-  background: rgb(73, 72, 72);
-  border-radius: 4px;
-  box-shadow: 0 5px 15px black;
-  transition: 0.5s;
+h3 {
+  display: block;
+  text-align: center;
+  font-family: "nexa_font";
 }
-.imgboxRobert {
-  margin: 0;
-  padding-bottom: 20px;
-  padding-top: 150px;
+p{
+  display: block;
+  text-align: center;
+  font-family: "nexa_font";
+  color: white;
+  width: 1000px;
+  margin: auto;
 }
-#imgRobert {
-  width: 100%;
+.favGames {
+  display: flex; 
+  justify-content: center;
 }
-#bodyRobert {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  font-family: sans-serif;
-  background: rgb(83, 83, 83);
+.favGames a {
+  margin: 0px 40px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272727;
+  border-top: 2px solid #FFFFFF;
+  padding: 40px 40px 30px;
+  margin-top: 30px;
+}
+footer p{
+  color: white;
+  font-size: 25px;
+  padding: 20px 0px;
+  font-family: "nexa_font";
+  background-color: #272727;
 }
